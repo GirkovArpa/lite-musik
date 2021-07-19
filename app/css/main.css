@@ -1,0 +1,110 @@
+html {
+  var(emoji-blue): #0079D8;
+  var(emoji-purple): #B5A1FF;
+  var(emoji-violet): #745BC2;
+  width: 0px;
+  height: 0px;
+  background: transparent;
+  overflow: hidden;
+}
+
+body {
+  width: 350px;
+  height: 75px;
+  margin: 0;
+  background: var(emoji-purple, red);
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+div#container {
+  cursor: move;
+  padding: 10px;
+  display: flex;
+  flow: vertical;
+  border-spacing: *;
+  width: *;
+  height: *;
+  position: relative;
+}
+
+div#title {
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transform: translate(0, -0.25em);
+  font-size: 1.25em;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  color: white;
+  text-shadow: 1px 1px 0px var(emoji-violet, red), -1px -1px 0px var(emoji-violet, red), -1px 1px 0px var(emoji-violet, red), 1px -1px 0px var(emoji-violet, red), 1px 1px 0px var(emoji-violet, red), -1px -1px 0px var(emoji-violet, red), -1px 1px 0px var(emoji-violet, red), 1px -1px 0px var(emoji-violet, red);
+  font-weight: bold;
+}
+
+div#progress {
+  width: 100%;
+  height: 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  background: linear-gradient(left, var(emoji-blue, red) 25%, var(emoji-blue, red) 25%, white 25%);
+  text-align: center;
+}
+
+div#buttons {
+  display: flex;
+  flow: horizontal;
+  border-spacing: *;
+  width: 50%;
+  margin: auto;
+}
+
+.button {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-size: 24px 24px;
+  cursor: pointer;
+  behavior: clickable;
+}
+
+.button:disabled {
+  opacity: 0.3;
+}
+
+.button#about, .button#close {
+  width: 16px;
+  height: 16px;
+  background-size: 100%;
+  position: absolute;
+}
+
+.button#about {
+  background-image: url('this://app/img/png/info.png');
+}
+
+.button#close {
+  left: calc(100% - 26px);
+  background-image: url('this://app/img/png/close.png');
+}
+
+.button#previous {
+  background-image: url('this://app/img/png/previous.png');
+}
+
+.button#rewind {
+  background-image: url('this://app/img/png/rewind.png');
+}
+
+.button#play-pause {
+  background-image: url('this://app/img/png/play.png');
+}
+
+.button#forward {
+  background-image: url('this://app/img/png/forward.png');
+}
+
+.button#next {
+  background-image: url('this://app/img/png/next.png');
+}
