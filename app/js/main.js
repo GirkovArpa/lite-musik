@@ -1,6 +1,4 @@
 import { $, $$ } from '@sciter';
-import * as sys from '@sys';
-import * as env from '@env';
 import { movableView } from 'this://app/js/moveable_view.js';
 import { DropZone } from 'this://app/js/drop_zone.js';
 
