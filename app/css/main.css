@@ -47,15 +47,15 @@ div#progress {
   height: 20px;
   box-sizing: border-box;
   border: 2px solid black;
-  background: linear-gradient(left, var(emoji-blue, red) 25%, var(emoji-blue, red) 25%, white 25%);
+  background: linear-gradient(left, var(emoji-blue, red) 0%, var(emoji-blue, red) 0%, white 0%);
   text-align: center;
 }
 
 div#buttons {
   display: flex;
   flow: horizontal;
-  border-spacing: *;
-  width: 50%;
+  border-spacing: 1em;
+  width: max-content;
   margin: auto;
 }
 
